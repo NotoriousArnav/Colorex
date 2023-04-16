@@ -1,5 +1,6 @@
 import extcolors, uuid
 from colormap import rgb2hex
+import PIL
 
 def extract_colors(image) -> dict:
     colors = extcolors.extract_from_path(image) if isinstance(image, str) else extcolors.extract_from_image(image)
